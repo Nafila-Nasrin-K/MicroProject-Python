@@ -1,0 +1,92 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for form and table */
+.form-container, .table-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Form input styles */
+form input[type="text"],
+form input[type="time"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    background-color: #5c9ded;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3b82f6;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #eef2f7;
+    font-weight: 600;
+}
+
+/* Button group on result page */
+.button-group {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.button-group button {
+    background-color: #66bb6a;
+    margin-left: 8px;
+}
+
+.button-group .delete-btn {
+    background-color: #ef5350;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}

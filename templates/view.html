@@ -1,0 +1,35 @@
+<body>
+  <div class="table-container">
+    <h2>Exam Timetable</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Code</th>
+          <th>Batch</th>
+          <th>Year</th>
+          <th>Department</th>
+          <th>Exam Time</th>
+          <th>Hall Invigilator</th>
+          <th>Hall No</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for exam in exams %}
+        <tr>
+          <td>{{ exam.course_name }}</td>
+          <td>{{ exam.course_code }}</td>
+          <td>{{ exam.batch }}</td>
+          <td>{{ exam.year }}</td>
+          <td>{{ exam.department }}</td>
+          <td>{{ exam.exam_time }}</td>
+          <td>{{ exam.hall_invigilator }}</td>
+          <td>{{ exam.hall_no }}</td>
+          <td><a href="/delete/{{ exam.id }}" onclick="return confirm('Are you sure?')">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
